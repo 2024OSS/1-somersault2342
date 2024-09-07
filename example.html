@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Navbar</title>
+    <style>
+        /* body, html {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            color: white;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            justify-content: space-between;
+
+
+            position: fixed;
+            top: 0;
+            width: 100%;
+        } 
+        */
+
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between; /* 좌우로 요소를 배치 */
+    align-items: center; /* 수직 중앙 정렬 */
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* 다른 요소 위에 표시되도록 설정 */
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-menu {
+    list-style-type: none; /* 기본 리스트 스타일 제거 */
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-menu li {
+    margin-right: 20px; /* 메뉴 항목 간 간격 설정 */
+}
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none; /* 밑줄 제거 */
+    font-size: 18px;
+}
+
+.nav-menu li a:hover {
+    text-decoration: underline; /* 마우스 오버 시 밑줄 표시 */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+}
+
+.content {
+    margin-top: 60px; /* 내비게이션 바 아래쪽에 공간 확보 */
+    padding: 20px;
+}
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="#" style="font-weight: bold;">Top Navbar</a></li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+        <div class="search-container">
+            <input type="text" placeholder="Search">
+        </div> 
+    </nav>
+    <div>
+        <!-- br tag -->
+        <br/><br/>
+
+        <h1>Hello World!</h1>
+        <h3>Kangsan 22300059</h3>
+    </div>
+</body>
+</html>
